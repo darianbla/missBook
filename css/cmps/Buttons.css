@@ -1,0 +1,19 @@
+/** @format */
+
+button {
+    color: var(--white);
+  border-radius: 3em;
+  font-size: 1em;
+  background-color: var(--lightgreen);
+  border: 2px dotted var(--lightred);
+  filter: drop-shadow( 0 0 1px var(--white));
+  margin: .5em;
+  transition: .4s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--lightred);
+  border: 2px dotted var(--lightgreen);
+  filter: drop-shadow( 0 0 3px var(--white));
+}

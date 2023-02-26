@@ -1,0 +1,27 @@
+/** @format */
+
+body {
+  font-family: monospace;
+  height: 100vh;
+  color: var(--white);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /* overflow: hidden; */
+  /* filter: drop-shadow(0 0 10px white); */
+}
+
+.container {
+  display: grid;
+  padding: .825rem;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 0.825rem;
+}
+
+.container > *:not(.full) {
+  grid-column: 2;
+}
+
+.full {
+  grid-column: 1/-1;
+}
